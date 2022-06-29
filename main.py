@@ -1,16 +1,17 @@
-# This is a sample Python script.
+string = input()
+symbol = input()
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+min_index, max_index = None, None
+
+for i, v in enumerate(string):
+     if v == symbol:
+         if min_index is None:
+                min_index = i
+         max_index = i
+print(min_index)
+print(max_index)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+_list_ = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(len(_list_))
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
