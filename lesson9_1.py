@@ -1,15 +1,17 @@
 print(list('asd'))
 # ['a', 's', 'd']
 
-print([i for i in range(5)])
+print([i for i in range(5)])  # List comprehension - способ создания списка "не лету", т.е. возможность объявить содержимое списка прямо внутри списка
 # [0, 1, 2, 3, 4]
+# https://github.com/Faoxis/PythonBasicAndApplication/blob/master/week2/3.%20Iterators%20and%20generators.ipynb
+# интересная инфа про List comprehension ↑↑↑
 
 print([i ** 2 for i in range(5)])
 # [0, 1, 4, 9, 16]
 
 print([i ** 2 for i in range(5) if i % 2 == 0])
 # [0, 4, 16]
-# это был короткий вариант записи кода:
+# это был короткий вариант записи кода ↑:
 lst = []
 for i in range(5):
     if i % 2 == 0:
@@ -110,7 +112,7 @@ print(any(_list))
 _list = ['1', '2', 'asd', 'asdad', '4']
 print(filter(str.isdigit, _list))
 # <filter object at 0x000001F2D5C93D30>
-# поэтому надо использовать list
+# поэтому надо использовать list ↓↓↓
 print(list(filter(str.isdigit, _list)))
 # ['1', '2', '4']
 
@@ -125,8 +127,15 @@ print([i.isdigit() for i in _list])
 # [True, True, False, False, True]
 
 
-_list = [1,2,3,4,5]
-print(_list.append('asd'))  # ??
+_list = [1, 2, 3, 4, 5]
+_list.append('asd')  # используется для добавления элементов к списку.
+print(_list)  # добавление нового элемента происходит в конец списка.
+# [1, 2, 3, 4, 5, 'asd']
+_list1 = [1, 2, 3, 4, 5]
+_list2 = ['cat', 'dog']
+_list1.append(_list2)
+print(_list1)
+
 
 _list = [1, 2, 3, 4, 4, 5]
 print(_list.count(4))
@@ -167,9 +176,9 @@ item = my_list.pop(15)
 print(item)
 print(my_list)  # ошибка
 # Метод pop() удаляет элемент на основе переданного индекса.
-# # Синтаксис: list.pop(index).
-# # Принимает лишь один аргумент — индекс.
-# # Для удаления элемента списка нужно передать его индекс. Индексы в списках стартуют с 0.
+# Синтаксис: list.pop(index).
+# Принимает лишь один аргумент — индекс.
+# Для удаления элемента списка нужно передать его индекс. Индексы в списках стартуют с 0.
 # Для получения первого передайте 0. Для удаления последнего передайте -1.
 # Этот аргумент не является обязательным.
 # Значение по умолчанию равно -1, поэтому по умолчанию будет удален последний элемент.
