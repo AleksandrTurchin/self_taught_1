@@ -1,15 +1,15 @@
-string = input()
-symbol = input()
+#  Дан список. Необходимо найти сумму и произведение элементов списка. Результаты вывести на экран.
+_list = [1, 2, 3, 4, 5]
+print(sum(_list))
 
-min_index, max_index = None, None
+x = 1
+for i in _list:
+    x *= i
+# print(x)
 
-for i, v in enumerate(string):
-     if v == symbol:
-         if min_index is None:
-                min_index = i
-         max_index = i
-print(min_index)
-print(max_index)
+print([i * [i] for i in _list])
 
-
-
+_list1 = ['cat', 'dog']
+_list2 = ['wolf', 'chep']
+_list1.append(_list2)
+print(_list1)
