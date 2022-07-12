@@ -76,6 +76,15 @@ print(sum(_list, start=10))  # начало отсчета с 10
 _list = [1,2,3,4,5]
 print(len(_list))  # количество элементов в списке
 # 5
+# ↓↓↓получить количество уникальных элементов в списке↓↓↓
+list_d = [100, 3, 100, "c", 100, 7.9, "c", 15]
+number_of_elements = len(list_d)
+number_of_unique_elements = len(set(list_d))  # функция set() создает объект set, который отклоняет все повторяющиеся значения. Затем мы передаем это в функцию len(), чтобы получить количество элементов в set
+print("Number of elements in the list: ", number_of_elements)
+# Number of elements in the list: 8
+print("Number of unique elements in the list: ", number_of_unique_elements)
+# Number of unique elements in the list:  5
+
 
 _list = [1,5,4,3,2]
 print(sorted(_list))
@@ -155,8 +164,9 @@ print(_list.index(5))
 # 5
 
 _list = [1, 2, 3, 4, 4, 5]
-print(_list.insert(1, 'asd'))  #  ?????????????????????
-#
+_list.insert(1, 'asd')  # метод insert() добавляет один элемент в список по указанному индексу.
+print(_list)
+# [1, 'asd', 2, 3, 4, 4, 5]
 
 my_list = [12, 'USA', 'Sun', 14, 'Mars', 12, 'Mars']
 # Передавая индекс как 2, чтобы удалить Sun:
@@ -208,8 +218,8 @@ element = my_list.clear()
 print(element)  # None
 print(my_list)  # []
 # Метод clear() удаляет все элементы из списка.
-# # Синтаксис: list.clear().
-# # Нет ни параметров, ни возвращаемого значения.
+# Синтаксис: list.clear().
+# Нет ни параметров, ни возвращаемого значения.
 
 my_list = list(range(7))
 print("Исходный список", my_list)
@@ -257,8 +267,35 @@ print(_list)
 
 
 _list_ = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-print(len(_list_))
+print(len(_list_))  # выводит количество вложенных списков
 # 3
+
+# ↓↓↓Получить количество элементов в списке, содержащем другие списки↓↓↓
+list_e = [[90, 4, 12, 2], [], [34, 45, 2], [9,4], "char", [7, 3, 19]]
+count = 0  #  инициализировать переменную count= 0 и просмотреть список
+for element in list_e:
+    count += len(element)  # на каждой итерации цикла count увеличивается на длину этого списка.
+print(count)
+# 16
+#  ↓↓↓ Еще один интересный способ сделать то же самое, что и в предыдущем примере, - использовать определение списка:
+number_of_elements = sum([len(element) for element in list_e])  # Эта строка, по сути, делает две вещи. Во-первых,
+# он создает новый список, содержащий длины всех элементов исходного списка. В нашем случае это было бы так [4, 0, 3, 2, 4, 3].
+# Во-вторых, он вызывает функцию sum(), используя вновь созданный список в качестве параметра, который возвращает общую сумму всех элементов,
+# давая нам желаемый результат.
+print(number_of_elements)
+
+# ↓↓↓Получить количество элементов в списке, содержащем другие списки, содержащем еще списки↓↓↓
+# https://dev-gang.ru/article/python-poluczit-koliczestvo-elementov-v-spiske-7xoe1p0fd7/
+list_f = [30, 0.9, [8, 56, 22, ["a", "hello"]], [200, 3, [5, [89], 10]]]
+def get_elements_of_nested_list(element):
+    count = 0
+    if isinstance(element, list):
+        for each_element in element:
+            count += get_elements_nested_list(each_element)
+    else:
+        count += 1
+    return count
+print("Total number of elements in the nested list: ", get_elements_of_nested_list(list_f))
 
 from copy import copy  #  ????????????????????
 
