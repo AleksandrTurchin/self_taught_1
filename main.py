@@ -1,45 +1,12 @@
-for i in range(5):
-    print(i)
-else:  # будет выводиться, если не ограничено условиями ранее
-    print('Cycle is over')
-# 0
-# 1
-# 2
-# 3
-# 4
-# Cycle is over
+h = int(input('h = '))
+m = int(input('m = '))
+s = int(input('s = '))
 
-for i in range(5):
-    if i == 3:
-        break  # c "break" "else" работать не будет так цикл прерван i=3
-    print(i)
-else:
-    print('Cycle is over')
-# 0
-# 1
-# 2
+result = (h * 3600000) + (m * 60000) + (s * 1000)
 
-for i in range(5):
-    if i == 3:
-        continue   # c "continue" "else" будет работать
-    print(i)
+if 0 <= s <= 59:
+    elif 0 <= m <= 59:lif 0 <= h <= 23:
+    print('значение часов должно быть от 0 до 23')
 else:
-    print('Cycle is over')
-# 0
-# 1
-# 2
-# 4
-# Cycle is over
+    print('миллисекунд: ', result)
 
-for i in range(5):
-    if i == 3:
-        pass   # c "pass" "else" будет работать
-    print(i)
-else:
-    print('Cycle is over')
-# 0
-# 1
-# 2
-# 3
-# 4
-# Cycle is over
