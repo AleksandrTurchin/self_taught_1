@@ -1,12 +1,4 @@
-h = int(input('h = '))
-m = int(input('m = '))
-s = int(input('s = '))
-
-result = (h * 3600000) + (m * 60000) + (s * 1000)
-
-if 0 <= s <= 59:
-    elif 0 <= m <= 59:lif 0 <= h <= 23:
-    print('значение часов должно быть от 0 до 23')
-else:
-    print('миллисекунд: ', result)
+dict_1 = dict.fromkeys([1, 2, 3, 4, 5], 'asd')
+print(dict_1)
+# {1: 'asd', 2: 'asd', 3: 'asd', 4: 'asd', 5: 'asd'}
 
