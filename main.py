@@ -1,4 +1,6 @@
-dict_1 = dict.fromkeys([1, 2, 3, 4, 5], 'asd')
+str_1 = 'aaaaabbbaaaaaaaaaaaaaaa'
+dict_1 = {}
+for elem in str_1:
+    dict_1[elem] = str_1.count(elem)
 print(dict_1)
-# {1: 'asd', 2: 'asd', 3: 'asd', 4: 'asd', 5: 'asd'}
-
+# {'a': 20, 'b': 3}

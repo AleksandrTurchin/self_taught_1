@@ -191,3 +191,27 @@ print(dict_1)
 
 
 
+
+
+# ↓↓↓ Задачи ↓↓↓
+str_1 = 'pythonist'
+dict_1 = {i: str_1.count(i) for i in str_1}
+print(dict_1)
+# {'p': 1, 'y': 1, 't': 2, 'h': 1, 'o': 1, 'n': 1, 'i': 1, 's': 1}
+# каждая буква будет ключом, а их количество значением ключа
+
+str_1 = 'aaaaabbbaaaaaaaaaaaaaaa'
+dict_1 = {}
+for elem in str_1:
+    dict_1[elem] = str_1.count(elem)
+print(dict_1)
+# {'a': 20, 'b': 3}
+
+
+
+
+
+
+
+
+
