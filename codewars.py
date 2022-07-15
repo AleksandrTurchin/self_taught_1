@@ -107,4 +107,47 @@ def maximum(arr):
     return max(arr)
 
 # KATA_8
+# In this simple assignment you are given a number and have to make it negative.
+# But maybe the number is already negative?
+# # Examples
+# make_negative(1);  # return -1
+# make_negative(-5); # return -5
+# make_negative(0);  # return 0
+# Notes
+# The number can be negative already, in which case no change is required.
+# Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
+
+def make_negative(number):
+    if number >= 0:
+        return number * (-1)
+    else:
+        return number
+
+# KATA_9
+# Grade book
+# Complete the function so that it finds the average of the three scores passed to it and
+# returns the letter value associated with that grade.
+#
+# Numerical Score	Letter Grade
+# 90 <= score <= 100	'A'
+# 80 <= score < 90	'B'
+# 70 <= score < 80	'C'
+# 60 <= score < 70	'D'
+# 0 <= score < 60	'F'
+# Tested values are all between 0 and 100. Theres is no need to check for negative values
+# or values greater than 100.
+
+def get_grade(s1, s2, s3):
+    get_grade = (s1 + s2 + s3) / 3
+    if 90 <= get_grade <= 100:
+        return 'A'
+    elif 80 <= get_grade <= 90:
+        return 'B'
+    elif 70 <= get_grade <= 80:
+        return 'C'
+    elif 60 <= get_grade <= 70:
+        return 'D'
+    return "F"
+
+# KATA_10
 #
