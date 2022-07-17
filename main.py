@@ -1,11 +1,12 @@
-# 4) Даны два списка одинаковой длины. Необходимо создать из них словарь таким образом,
-# чтобы элементы первого списка были ключами, а элементы второго — соответственно значениями нашего словаря.
-# Результаты выведите на экран.
+list_1 = [1, 2, 3]
+list_2 = [10, 20, 30]
+dictionary = dict(zip(list_1, list_2))
+print(dictionary)
 
+print()
+dictionary = dict.fromkeys([])
 
-for i in list_1:
-    for x in list_2:
-        dictionary = dict(list_1, list_2)
-        #print(dictionary)
-
-
+for x in list_2:
+    for i in list_1:
+        dictionary = dict.fromkeys(list_1, x)
+print(dictionary)
