@@ -28,7 +28,7 @@ _list = [1, 2, 3, 4, 5]
 print(_list[-2])
 # 4
 
-_list = [1,2,34,56,]
+_list = [1, 2, 34, 56,]
 _list1 = _list * 2
 print(_list1)
 # [1, 2, 34, 56, 1, 2, 34, 56]
@@ -46,7 +46,7 @@ _list[4], _list[2] = _list[2], _list[4]  # a, b = b, a
 print(_list)
 # [1, 2, 5, 4, 3, 6]
 
-_list = [1,2,3,4,5]
+_list = [1, 2, 3, 4, 5]
 print(max(_list))  # max - только с числами
 # 5
 
@@ -69,7 +69,7 @@ _list = [1, 2, 3, 4, 5]
 print(sum(_list))  # работает только с числами
 # 15
 
-_list = [1,2,3,4,5]
+_list = [1, 2, 3, 4, 5]
 print(sum(_list, start=10))  # начало отсчета с 10
 # 25
 
@@ -86,7 +86,7 @@ print("Number of unique elements in the list: ", number_of_unique_elements)
 # Number of unique elements in the list:  5
 
 
-_list = [1,5,4,3,2]
+_list = [1, 5, 4, 3, 2]
 print(sorted(_list))
 # [1, 2, 3, 4, 5]
 print(sorted(_list, reverse=True))  # возвращает в обратном порядке
@@ -101,7 +101,7 @@ print(sorted(_list, key=len, reverse=True))  # по количеству сим�
 #  ['11111111', '1111', '11', '1']
 
 
-_list = [1,2,3,4,5]
+_list = [1, 2, 3, 4, 5]
 print(all(_list))    #  аналог bool: print(bool(1)) - True   print(bool('')) - False
 # True
 
