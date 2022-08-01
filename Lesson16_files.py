@@ -193,3 +193,8 @@ os.removedirs("nested1/nested2/nested4")  # удалит только пусты
 # os.path.splitext(path) - разбивает путь на пару (root, ext), где ext начинается с точки и содержит не более одной точки.
 # os.path.supports_unicode_filenames - поддерживает ли файловая система Unicode.
 
+
+##############################
+# ↓↓↓↓ Модуль pathlib ↓↓↓↓
+# Использование модуля pathlib для манипуляции путями файловых систем в Python 3
+# https://www.digitalocean.com/community/tutorials/how-to-use-the-pathlib-module-to-manipulate-filesystem-paths-in-python-3-ru
