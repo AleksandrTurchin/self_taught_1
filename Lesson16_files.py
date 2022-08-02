@@ -198,3 +198,11 @@ os.removedirs("nested1/nested2/nested4")  # удалит только пусты
 # ↓↓↓↓ Модуль pathlib ↓↓↓↓
 # Использование модуля pathlib для манипуляции путями файловых систем в Python 3
 # https://www.digitalocean.com/community/tutorials/how-to-use-the-pathlib-module-to-manipulate-filesystem-paths-in-python-3-ru
+
+
+
+##############################
+# Сериализация/десериализация объектов
+
+# Модуль pickle
+
