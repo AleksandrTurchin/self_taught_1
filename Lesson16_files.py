@@ -720,4 +720,36 @@ os.path.supports_unicode_filenames
 # Сериализация/десериализация объектов
 
 # Модуль pickle
+# https://pythonworld.ru/moduli/modul-pickle.html
+# https://pythonworld.ru/moduli/modul-pickle.html
+
+
+# Модуль csv - чтение и запись CSV файлов
+# https://docs-python.ru/standart-library/modul-csv-python/priemy-raboty-modulem-csv/
+# https://pythonworld.ru/moduli/modul-csv.html
+
+
+# Чтение и запись файлов Excel (XLSX) в Python
+# https://pythonru.com/uroki/chtenie-i-zapis-fajlov-excel-xlsx-v-python
+# https://docs-python.ru/packages/modul-openpyxl/
+
+
+# Приемы работы с модулем json в Python
+# https://docs-python.ru/standart-library/modul-json-python/priemy-raboty-modulem-json/
+# https://pythonru.com/osnovy/modul-json-v-python
+# https://pythonist.ru/format-dannyh-json-v-python/
+
+
+# модуль YAML
+# https://docs-python.ru/packages/modul-pyyaml-python/sintaksis-dokumenta-yaml/
+# https://pythonist.ru/kak-chitat-fajly-yaml-v-python/
+#
+
+
+# INI
+# https://proglib.io/p/konfiguracionnye-fayly-kak-instrument-upravleniya-prilozheniyami-na-python-2021-06-11
+# https://docs-python.ru/standart-library/modul-configparser-python/metody-obekta-configparser/
+# https://habr.com/ru/post/485236/
+
+
 
