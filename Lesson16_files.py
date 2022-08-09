@@ -751,5 +751,3 @@ os.path.supports_unicode_filenames
 # https://docs-python.ru/standart-library/modul-configparser-python/metody-obekta-configparser/
 # https://habr.com/ru/post/485236/
 
-
-

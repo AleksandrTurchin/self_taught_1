@@ -1,10 +1,17 @@
-n = int(input())
 
-factorial = 1
+string_input = input('Введите в случайной последовательности числа от 0 до 9: ')
+# string_input = ('123456789012133288776655353535353441111')  # для теста
 
-for i in range(2, n+1):
-    factorial *= i
+number_dict = {}                                    # создаем словарь, где ключ элемент заданной строки, а значение количество повторений элемента в строке
+for i in string_input:                              # итерируемся по элементам строки
+    number_dict[int(i)] = string_input.count(i)     # int(i) - приводим элемент строки к целому числу
 
-print(factorial)
+sorted_values = sorted(number_dict.values())        # используем функцию sorted() для упорядочивания значений словаря
+sorted_num_dict = {}
+for i in sorted_values:                             # перебираем отсортированные значения, находя ключи для каждого значения
+    for k in number_dict.keys():
+        if number_dict[k] == i:
+            sorted_num_dict[k] = number_dict[k]     # добавляем эти пары ключ-значение в отсортированном порядке в новый словарь
 
+print(dict(list(sorted_num_dict.items())[-3:]))  # методом items() формируем пары (ключ, значение) в виде кортежей => методом list() приводим к списку из кортежей => с помощью среза [-3:] получаем последние 3 элемента списка => методом dict() собираем обратно в словарь
 

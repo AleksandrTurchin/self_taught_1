@@ -1,6 +1,7 @@
 # Кортежи
 # https://pythonru.com/osnovy/kortezhi-python
 # https://pythonchik.ru/osnovy/kortezhi-v-python
+# https://www.bestprog.net/ru/2020/04/15/python-operations-on-tuples-bypass-of-tuple-methods-of-working-with-tuples-ru/
 
 print(type((1, 2, 3, 4)))
 # <class 'tuple'>
@@ -18,7 +19,7 @@ print(_tuple[2])
 print(_tuple[-1])
 # b
 
-# _tuple[1] = 2  # error
+# _tuple[1] = 2  # Typeerror
 # принимает не изменяемые значения
 
 _tuple1 = (1, 2, 3)
