@@ -149,5 +149,39 @@ def get_grade(s1, s2, s3):
         return 'D'
     return "F"
 
+
 # KATA_10
+# Find the odd integers
+# Given an array of integers, find the one that appears an odd number of times.
+#
+# There will always be only one integer that appears an odd number of times.
+#
+# Examples
+# [7] should return 7, because it occurs 1 time (which is odd).
+# [0] should return 0, because it occurs 1 time (which is odd).
+# [1,1,2] should return 2, because it occurs 1 time (which is odd).
+# [0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
+# [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
+
+def find_it(seq):
+    for i in seq:
+        if seq.count(i) % 2 == 1:
+            return(i)
+    return None
+
+
+# KATA_11
+# There is an array with some numbers. All numbers are equal except for one. Try to find it!
+# find_uniq([ 1, 1, 1, 2, 1, 1 ]) == 2
+# find_uniq([ 0, 0, 0.55, 0, 0 ]) == 0.55
+# It’s guaranteed that array contains at least 3 numbers.
+# The tests contain some very huge arrays, so think about performance.
+
+def find_uniq(arr):
+    for n in set(arr):
+        if arr.count(n) == 1:
+            return n   # n: unique number in the array
+
+
+# KATA_12
 #
