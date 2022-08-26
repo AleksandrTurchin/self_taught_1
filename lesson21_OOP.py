@@ -3,6 +3,21 @@
 # https://python.ivan-shamaev.ru/classes-python-3-methods-oop-examples/
 # https://smartiqa.ru/courses/python/lesson-6
 
+# https://www.youtube.com/watch?v=jtIq61A1LLw&list=PLQAt0m1f9OHvyjJNjZK_unnLwMOXPTja8
+# плейлист по ООП
+
+
+
+
+
+
+
+
+
+
+
+
+"""
 class Second:
     color = "red"
     form = "circle"
@@ -19,3 +34,4 @@ obj2.changecolor("blue")           # изменение цвет второго 
 obj2.changeform("oval")            # изменение формы второго объекта
 print(obj1.color, obj1.form)       # вывод на экран "green circle"
 print(obj2.color, obj2.form)       # вывод на экран "blue oval"
+"""
